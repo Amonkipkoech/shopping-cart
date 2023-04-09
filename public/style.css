@@ -1,0 +1,289 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,100');
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania');
+ *{
+     box-sizing: border-box;
+     font-family: 'Lato', sans-serif;
+     font-family: 'Montserrat', sans-serif;
+     font-family: 'Raleway', sans-serif;
+     font-family: 'Roboto', sans-serif;
+      color:#777 #777;
+    }
+ 
+ html,body{
+     margin: 0;
+     padding: 0;
+ }
+
+.main-header{
+    background-color: antiquewhite; 
+    background-image: url("Images/pexels-francesco-paggiaro-581087.jpg");
+    background-blend-mode: multiply;
+    background-size: cover;
+    padding-bottom: 30px;
+}
+.nav-header{
+     margin: 0;
+     text-align: center;
+     font-size: 1.1em;
+     font-weight: lighter;
+     border-bottom: 1px solid rgba(255, 255, 255, .4);
+}
+.nav-header li{
+       display: inline-block;
+       padding: 0 5%;
+
+
+}
+.a{
+       padding: 15px;
+       color: aliceblue;
+       text-decoration: none;
+}
+.a:hover{
+      background-color: rgba(255, 255, 255, .6);
+}
+.band-name{
+       text-align: center;
+       margin: 0;
+       font-size: 4em;
+      
+       font-family: 'Raleway';
+      
+        font-weight: normal; 
+        color: white; 
+}
+.Content-Section{
+     margin: 1em  auto;
+     max-width: 80%;
+}
+.Section-Head{
+    font-family: 'Metal Mania';
+    font-weight: normal;
+    text-align: center;
+    color: #333;
+}
+.about-image{
+     float: left;
+     height: 200px;
+     font-weight: 200px;
+      margin: 15px;
+      border-radius: 50%;
+}
+.Main-Footer{
+    background-color: aqua;
+    color: white;
+    padding: .25em 0;
+    text-align: center;
+}
+
+.Main-Footer ul li{
+     display: inline-block;
+     padding: 1em 3em;
+}
+.btn{
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em;
+    cursor: pointer;
+}
+#btn-header{
+     margin: .5en 15% 2en 15%;
+     color: white;
+     border: 2px solid rgb(57, 196, 252);
+     background-color: rgba(255, 255, 255, .1);
+     border-radius: 0;
+     font-size: 1.5em;
+      font-weight: lighter;
+      padding-left: 2em;
+      padding-right: 2em;
+      margin-left: 27%;
+     }
+ #btn-header:hover{
+       background-color: rgba(255, 255, 255, .6); 
+ }
+ #btn-header-play{
+    color: white;
+    border: 2px solid rgb(57, 196, 252);
+    background-color: rgba(255, 255, 255, .3);
+    display: block;
+    margin: 0 auto; 
+    color: blue;
+    font-size: 4em;
+    border-radius: 50%;
+    padding:0;
+    width: 100px;
+    height: 100px;
+
+}
+#btn-header-play:hover{
+    background-color: rgba(255, 255, 255, .6); 
+}
+.tour-row{
+     border-bottom: 1px solid black;
+     padding: 0.7em;
+     margin-bottom: 0.5em;
+}
+.tour-row:last-child{
+      border-bottom: none;
+}
+.tour-item{
+     display: inline-block;
+     padding-right: .5em;
+} 
+#tour-date{
+     color: #555;
+     font-weight: bold;
+     width: 12%;
+}
+#tour-city{
+    width: 24%; 
+}
+#tour-music{
+    width: 40%; 
+}
+#tour-btn{
+    max-width: 19%;
+    color:white;
+    background-color:rgb(13, 223, 238);
+     border: none;
+     border-radius: .3em;
+     font-weight: bold;
+}
+#tour-btn:hover{
+     background-color: rgb(113, 22, 218);
+}
+.shop-item-btn{
+    max-width: 19%;
+    color:white;
+    background-color:rgb(13, 223, 238);
+     border: none;
+     border-radius: .3em;
+     font-weight: bold;
+}
+.shop-item{
+    margin:14px;
+
+}
+.shop-item-title{
+    display: block;
+    width: 16%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #333;
+     margin-bottom: 15px;
+}
+.shop-item-img{
+     height: 250px;
+}
+.shop-item-details{
+    display: flex;
+    align-items:center;
+    padding:5px;
+}
+.shop-item-price{
+     flex-grow: 1; 
+     color: #333;
+     margin-left: 6px;
+}
+.shop-items{
+     display: flex;
+     flex-wrap:wrap;
+     justify-content: space-around;
+}
+.cart-header{
+    font-weight: bold;
+    font-size: 1,25px;
+    color: #333;    
+}
+.cart-column{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px;
+    margin-right: 35%;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    border-bottom: solid black;
+
+}
+.cart-row{
+    display: flex;
+    
+}
+.cart-item{
+      width: 5%;
+      
+}
+.cart-price{
+        width: 30%;
+         font-size: 1.2em;
+         color: #333;
+}
+.cart-quantity{
+       width:35%;       
+}
+.cart-item-title{
+        color:#333;
+        margin-left:.5em;
+        font: size 1.2em;
+}
+.cart-item-img{
+        width: 75px;
+        height: auto;
+        border-radius: 5px;
+}
+.cart-quantity-btn{
+        color: white;
+        background-color:rgb(212, 76, 76) ;
+        border: none;
+        border-radius: .3em;
+        font-weight: bold;
+}
+.cart-quantity-btn:hover{
+    background-color: red;
+}
+.cart-quantity-input{
+      height: 34px;
+      width: 50px;
+      border-radius: 5px;
+      border: 1px solid rgb(78, 185, 247);
+      background-color: whitesmoke;
+       padding:0;
+       text-align:center;
+       font-size: 1.2em;
+       margin-right: 25px;
+}
+.cart-row:last-child{
+    border-bottom: 1px solid black;
+}
+.cart-row:last-child .cart-column{
+    border:none;
+}
+.cart-total{
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px ;
+}
+.cart-total-title{
+     font-weight: bold;
+     font-size:1.5em;
+     color: black;
+     margin-right: 20px;
+}
+.cart-total-price{
+     color: #e60a0a;
+     font-size: 1.1em;
+}
+.btn-purchase{
+     display: block;
+     margin: 40px auto 80px auto;
+     font-size: 1.75em;
+
+     color: white;
+     background-color: rgb(13, 118, 238);
+     border-radius: 6px;
+}
+.btn-purchase:hover{
+     background-color: aqua;
+}
