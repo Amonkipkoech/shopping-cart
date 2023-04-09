@@ -24,86 +24,33 @@
      <section class="Content-Section">
              <h1 class="Section-Head">MUSIC</h1>
              <div class="shop-items">
-                  <DIV class="shop-item">
-                        <span  class="shop-item-title">Album 1</span>
-                       
-                        <img  class="shop-item-img" src="Images/pexels-salah-amrani-1232459.jpg" alt="">
-                      <div class="shop-item-details">
-                            <span class="shop-item-price">12.99</span>
-                             <button class="shop-item shop-item-btn"  role="button">ADD TO CART</button>
-                      </div>
-                  </DIV>
-                  <DIV class="shop-item"> 
-                      
-                     <div>
-                           <span class="shop-item-title">Album 2</span>
-                     </div>
-                     <img  class="shop-item-img" src="Images/pexels-salah-amrani-1232459.jpg" alt="">
-                    <div class="shop-item-details">
-                          <span class="shop-item-price">414.99</span>
-                           <button class="shop-item shop-item-btn"  role="button">ADD TO CART</button>
-                    </div>
-                 </DIV>
-                 <DIV class="shop-item">
-                      
-                     <div>
-                           <span class="shop-item-title">Album 3</span>
-                     </div>
-                     <img  class="shop-item-img" src="Images/pexels-salah-amrani-1232459.jpg" alt="">
-                    <div class="shop-item-details">
-                          <span class="shop-item-price">610.99</span>
-                           <button class="shop-item shop-item-btn"  role="button">ADD TO CART</button>
-                    </div>
-                 </DIV>
-                 <DIV class="shop-item">
-                      
-                     <div>
-                           <span class="shop-item-title">Album 4</span>
-                     </div>
-                     <img  class="shop-item-img" src="Images/pexels-salah-amrani-1232459.jpg" alt="">
-                    <div class="shop-item-details">
-                          <span class="shop-item-price">422.99</span>
-                           <button class="shop-item shop-item-btn"  role="button">ADD TO CART</button>
-                    </div>
-                 </DIV>
+                  <% items.music.forEach(function(item) { %>
+                              <DIV class="shop-item"  data-item-id=" <%= item.id %>">
+                                    <span  class="shop-item-title"><%= item.name  %></span>                              
+                                    <img  class="shop-item-img" src="Images/<%= item.image%>" alt="">
+                                    <div class="shop-item-details">
+                                          <span class="shop-item-price"> <%= item.price / 100 %> </span>
+                                          <button class="shop-item shop-item-btn"  role="button">ADD TO CART</button>
+                                    </div>
+                              </DIV>
+                  <% }) %>          
+                 
              </div>
              
      </section>
      <section class="Content-Section"></section>>
           <h1 class="Section-Head">MERCH</h1>
       <div class="shop-items">
-          <DIV class="shop-item" >             
-                    <span class="shop-item-title">T-SHIRT</span>              
-                    <img  class="shop-item-img" src="Images/pexels-francesco-paggiaro-581087.jpg" alt="">
-             <div class="shop-item-details">
-                   <span  class="shop-item-price">919.99</span>
-                   <button class="shop-item shop-item-btn"  role="button">ADD TO CART</button>
-             </div>
-          </DIV>
-          <DIV class="shop-item">           
-              <span class="shop-item-title">Trouser</span>            
-              <img  class="shop-item-img" src="Images/pexels-francesco-paggiaro-581087.jpg" alt="">
-           <div class="shop-item-details">
-                 <span  class="shop-item-price">714.99</span>
-                 <button class="shop-item shop-item-btn"  role="button">ADD TO CART</button>
-           </div>
-         </DIV>
-         <DIV class="shop-item">           
-            <span class="shop-item-title">Short</span>            
-            <img  class="shop-item-img" src="Images/pexels-francesco-paggiaro-581087.jpg" alt="">
-         <div class="shop-item-details">
-               <span  class="shop-item-price">564.99</span>
-               <button class="shop-item shop-item-btn"  role="button">ADD TO CART</button>
-         </div>
-       </DIV>
-       <DIV class="shop-item">           
-            <span class="shop-item-title">Skirt</span>            
-            <img  class="shop-item-img" src="Images/pexels-francesco-paggiaro-581087.jpg" alt="">
-         <div class="shop-item-details">
-               <span  class="shop-item-price">334.99</span>
-               <button class="shop-item shop-item-btn"  role="button">ADD TO CART</button>
-         </div>
-       </DIV>
+            <% items.MERCH.forEach(function(item) { %>
+                  <DIV class="shop-item"  data-item-id=" <%= item.id %>">
+                        <span  class="shop-item-title"><%= item.name  %></span>                              
+                        <img  class="shop-item-img" src="Images/<%= item.image%>" alt="">
+                        <div class="shop-item-details">
+                              <span class="shop-item-price"> <%= item.price / 100 %> </span>
+                              <button class="shop-item shop-item-btn"  role="button">ADD TO CART</button>
+                        </div>
+                  </DIV>
+      <% }) %> 
       </div> 
      </section>
      <section  class="Content-Section"  >
