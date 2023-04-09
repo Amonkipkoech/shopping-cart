@@ -1,0 +1,54 @@
+{
+    "music":[
+        {
+            "id": 1,
+            "name": "Album 1",
+            " price": 1299,
+            "image":"pexels-salah-amrani-1232459.jpg"
+            },
+            {
+                "id": 2,
+                "name": "Album 2",
+                " price": 41499,
+                "image":"pexels-salah-amrani-1232459.jpg"
+            },
+            {
+                "id": 3,
+                "name": "Album 3",
+                " price": 61099,
+                "image":"pexels-salah-amrani-1232459.jpg"
+            },
+            {
+                "id": 4,
+                "name": "Album 4",
+                " price": 42299,
+                "image":"pexels-salah-amrani-1232459.jpg"
+            }
+    ],
+    "MERCH":[
+          {
+            "id": 5,
+            "name": "T-Shirt",
+            " price": 91999,
+            "image":"pexels-francesco-paggiaro-581087.jpg"
+          },
+          {
+            "id": 6,
+            "name": "Trouser",
+            " price": 71499,
+            "image":"pexels-francesco-paggiaro-581087.jpg"
+          },
+          {
+            "id": 7,
+            "name": "Short",
+            " price": 56499,
+            "image":"pexels-francesco-paggiaro-581087.jpg"
+          },
+          {
+            "id": 8,
+            "name": "Skirt",
+            " price": 33499,
+            "image":"pexels-francesco-paggiaro-581087.jpg"
+          }
+    ]
+}
