@@ -74,7 +74,7 @@
      })
      
     function purchaseclicked(){
-         // alert('Thank you for your purchase')
+        
          
          var priceElement = document.getElementsByClassName('cart-total-price')[0] 
          var  price = parseFloat (priceElement.innerText.replace('ksh','')) * 100
