@@ -5,16 +5,23 @@
     <meta name="description" content="This the description">
     <title>The Generics</title>
     <link rel="stylesheet" href="style.css">
-     <script defer src="store.js" async> </script>
+
+     <script src="https://checkout.stripe.com/checkout.js" defer ></script>
+     <script  src="store.js" defer> </script>
+
+       <script>
+             var stripePublicKey = '<%= stripePublicKey %>'
+       </script>
+      
 </head>
 <body>
       <header class="Main-Header">
             <nav class="nav-header" >
-                <ul >
-                      <li> <a class="a" href="index.html"> <strong>HOME</strong></a> </a><li>
-                      <li> <a class="a" href="store.html"> <strong>STORE</strong></a> </a><li>
-                      <li> <a  class="a" href="abouts.html"> <strong>ABOUT</strong></a> </a><li>
-                </ul>
+                <ul>
+                       <li> <a class="a" href="index.html"> <strong>HOME</strong></a> </a><li>
+                       <li> <a class="a" href="store.html"> <strong>STORE</strong></a> </a><li>
+                       <li> <a  class="a" href="abouts.html"> <strong>ABOUT</strong></a> </a><li>
+                </ul> 
            </nav>
          
            <h1 class="band-name "> The Generics </h1>
