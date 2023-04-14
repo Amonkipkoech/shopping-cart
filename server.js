@@ -1,8 +1,16 @@
+// if (process.env.NODE_ENV !== 'production' ){
+//       require('dotenv').load()
+// }
+ 
+
+const { Console } = require('console')
 const express = require('express')
 const app = express()
 const fs = require('fs')
 const stripe = require ('stripe')(stripeSecretKey)
+let stripeSecretKey = 'testn'
 
+Console.log(stripeSecretKey)
 app.set('view engine', 'ejs')
 app.use(express.static('public'))
 app.use(express.json())
