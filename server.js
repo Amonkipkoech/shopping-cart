@@ -3,11 +3,12 @@
 // }
  
 
-const { Console } = require('console')
+
 const express = require('express')
 const app = express()
 const fs = require('fs')
 const stripe = require ('stripe')(stripeSecretKey)
+const { Console } = require('console')
 let stripeSecretKey = 'testn'
 
 Console.log(stripeSecretKey)
